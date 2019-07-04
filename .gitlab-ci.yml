@@ -1,5 +1,9 @@
 image: alpine:latest
 
+variables:
+  # Erreur SSL certificate (unable to get local issuer certificate) https://gitlab...
+  GIT_SSL_NO_VERIFY: "1"
+
 pages:
   stage: deploy
   script:

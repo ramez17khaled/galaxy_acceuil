@@ -62,36 +62,585 @@
                     </ul>
 
             </div>
-            <h5><a target="_blank" href="http://www.proteore.org/static/previous_releases_notes.html">ProteoRE previous Release notes</a></h5>
-            <BR>
+
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#changelog" aria-expanded="false" aria-controls="changelog">
+                    Previous release notes
+                </button>
+            </p>
+              <!-- To display changelog div or a card - class="collapse show" -->
+            <div id="changelog" class="collapse">
+                <div class="card">
+                    <div id="heading4" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            Release 28th June 2019 (version 2.0)
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading4" id="collapse4" class="collapse" data-parent="#changelog">
+                        <div class="card-body">
+                        <b>Update/Enhancement:</b>
+                            <ul>
+                            <li><b>Filter by keywords and/or numerical value</b>: addition of new option "keep/discard"</li>
+                            <li><b>ID converter</b>: the <i>Rattus norvegicus</i> species is now available for id conversion; addition of mapping database identifiers files for <i>Homo sapiens</i>, <i>Mus musculus</i>, <i>Rattus norvegicus</i> (UniProt release 05/06/2019). </li>
+                            <li><b>Add protein features [neXtProt]</b>: addition of release 2019-01-11</li></b>
+                            <li><b>Statistical analysis of functional profiles (Human, Mouse) [goProfiles]</b>: "Ontology level" option extended up to level 6. </li>
+                            <li><b>Query pathway database [Reactome]</b>: "species" option extended to <i>Mus musculus</i> and <i>Rattus norvegicus</i></li>
+                            </ul>
+                        <b>New tools:</b>
+                            <ul>
+                            <li><b><a target="_blank" href="http://www.proteore.org/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fproteore%2Fproteore_build_protein_interaction_maps%2Fbuild_protein_interaction_maps%2F2019.03.12.2&version=2019.03.12.2&__identifer=22uwwokghi5i">Build Protein-Protein interaction network [BioGRID, BioPlex, HuMAP]</a></b>: This tool allows building interaction maps by mapping your list of protein/gene identifiers on different public resources; the following PPIs resources are available: BioGRID(Homo sapiens, Mus musculus and Rattus norvegicus species); Human Bioplex (V.2.0) and HuMAP (Human Protein Complex Map). The two result files generated (network and nodes attributes) can be used for viewing and further exploration of the resulting protein interactions network by directly importing those in dedicated software (e.g. Cytoscape).</li>
+                            <li><b>Add protein features (Mouse) [UniProt]</a></b>: now deprecated and replaced by <b>Add protein features [UniProt, Human, Mouse, Rat]</b> tool in the next release (see above).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="heading3" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            Release 18th December 2018 (version 1.2)
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading3" id="collapse3" class="collapse" data-parent="#changelog">
+                        <div class="card-body">
+                            ProteoRE now comprises 15 tools for:
+                            <ul>
+                                <li>Data manipulation (e.g. filtering, list comparison, ID conversion)</li>
+                                <li>Human annotation (protein features, MS/MS observations, expression and tissue-specificity)</li>
+                                <li>GO terms analysis (functional profiles, enrichment analysis)</li>
+                                <li>Pathways analysis (Reactome and KEGG pathways exploration)</li>
+                                <li>Graphical representation (Venn diagram, heat map, bar- and dot-plot…)  </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="heading2" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Release 19th September 2018 (version 1.1)
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading2" id="collapse2" class="collapse" data-parent="#changelog">
+                        <div class="card-body">
+                            <b>Updates</b>: 
+                            <ul>
+                                <li>Filter by keywords or numerical value: You can now filter by a range of values, choose an operator to use when multiple filters are set (AND or OR) and sort your result files</li>
+                                <li>ID converter: the Mus musculus species is now available for id conversion, update of reference mapping file for id conversion, from Uniprot and neXtProt files (12/09/18)</li>
+                                <li>goProfiles: Mus musculus is now available as reference species, packages updated, IDs format is now checked. </li>
+                            </ul>
+                            <b>New tools</b>:
+                            <ul>
+                                <li>Number of MS/MS observations in a tissue : this tool reports the number of times peptides matching a protein have been observed in a given human biological sample using LC-MS/MS proteomics approach. Data were queried from Peptide Atlas release (Jan 2018). </li>
+                                <li>KEGG pathways coverage : this tool reports pathways concern by the proteins entered. Pathways are found with the Keggrest R library, results are sorted by the number of mapping ids on the number of pathway genes (%). </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="heading1" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                Release 7th May 2018 (version 1.0)
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading1" id="collapse1" class="collapse" data-parent="#changelog">
+                        <div class="card-body">
+                            ProteoRE comprises tools for:
+                            <ul>
+                                <li>Standard data manipulation (e.g. filtering, sorting, and ranking)Protein list annotation</li>
+                                <li>Annotation retrieval from databases</li>
+                                <li>Functional and pathways analysis (cross-comparison, classification and enrichment analysis)</li>
+                                <li>Graphical representation      </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--h5><a target="_blank" href="http://www.proteore.org/static/previous_releases_notes.html">ProteoRE previous Release notes</a></h5-->
+
             <h3>How to access ProteoRE ?</h3>
                     This public site is meant for academic usage;  for commercial usage, <a href="mailto:contact@proteore.org">contact us</a>). ProteoRE can currently be used as:
             <ul>
                 <li><b>Unregistered user</b>: you can analyze your data (e.g. proteomics identification results in tab format) using the available tools. Allocated storage space is limited to 20 Mb and data/history/analyses are not conserved between sessions.</li>
                 <li><b>Registered user</b> (password-protected access): we highly recommend to create a user account to keep track of and record the analyses and workflows created. Up to 20 Gb storage space is offered to registered users, along with access to shared resources (data, histories, workflows..). To create an account: click on "Account registration or login" on the main menu bar (upper part of the ProteoRE central panel), click on "registration" and fill out the form. Once the form is submitted, your account is created.</li>
             </ul>
-            <BR>
+
             <h3>Tutorials and training materials:</h3>
                     Training materials for ProteoRE are available via the Galaxy Training Network:
             <ul>
                 <li><a href="https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteome_annotation/tutorial.html" target="_blank"><b> Annotating a protein list identified by LC-MS/MS experiment</b></a></li>
                 <li><a href="https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/biomarker_selection/tutorial.html" target="_blank"><b>Strategy to select biomarker candidates</b></a></li>
             </ul>
-            <BR>
+
             <h3>How to contribute? </h3>
             <ul>
                 <li><b>As a developper/bioinformatician</b>: ProteoRE welcomes new development via GitHub, please <a href="https://github.com/ifb-git/ProteoRE" target="_blank">read here</a></li>
                 <li><b>As a biologist/clinician</b>: ProteoRE is designed for and with biologists/clinicians on the basis of case study using real proteomics data; ProteoRE is constantly evolving thanks to your feedbacks and we are grateful to all users for their suggestion that improve ProteoRE usability; for any specific need, wish, idea, do not hesitate to <a href="mailto:contact@proteore.org">contact@proteore.org</a>contact us.</li>
             </ul>
             <BR>
-            <h3>ProteoRE events: <a href="http://www.proteore.org/static/communication.html" target="_blank">training, communication, publication and related links</a></h3>
+            <!--h5>Data sources: <a href="http://www.proteore.org/static/data_source.html" target="_blank">public resources used by ProteoRE's tools</a></h5-->
+
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#datasource" aria-expanded="false" aria-controls="datasource">
+                    Data sources: public resources used by ProteoRE's tools
+                </button>
+            </p>
+              <!-- To display datasource div or a card - class="collapse show" -->
+            <div id="datasource" class="collapse">
+                <div class="card">
+                    <div id="heading017" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse017" aria-expanded="false" aria-controls="collapse017">
+                                ID Converter (Human, Mouse, Rat)
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading017" id="collapse017" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>Current release of Uniprot, for idmapping_selected.tab and idmapping.dat for Human, Mouse and Rat: <a href='ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping/by_organism'>current_release</a></li>
+                                <li>All previous release of uniprot can be found here: <a href='ftp://ftp.uniprot.org/pub/databases/uniprot/previous_releases/'>uniprot_previous_releases</a></li>
+                                <li>nextprot_ac_list_all.txt (Nextprot released on 13/02/2019 - current): <a href='ftp://ftp.nextprot.org/pub/current_release/ac_lists/'>ac_lists</a></li>
+                                <li>All previous release of nextprot_ac_list_all.txt can be foud here: <a href='ftp://ftp.nextprot.org/pub/previous_releases/'>nextprot_previous_releases</a></li>
+                                <li><a href="https://www.uniprot.org/uniprot/?query=reviewed:yes+AND+organism:9606+AND+created:[20120720%20TO%2020191218]&format=list">Human uniprot-AC entries reviewed (18/12/2019)</a></li>
+                                <li><a href="https://www.uniprot.org/uniprot/?query=reviewed:yes+AND+organism:10090+AND+created:[20120720%20TO%2020191218]&format=list">Mouse uniprot-AC entries reviewed (18/12/2019) </a></li>
+                                <li><a href="https://www.uniprot.org/uniprot/?query=reviewed:yes+AND+organism:10116+AND+created:[20120720%20TO%2020191218]&format=list">Rat uniprot-AC entries reviewed (18/12/2019) </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading016" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse016" aria-expanded="false" aria-controls="collapse016">
+                                Get expression profiles by (normal or tumor) tissue/cell type [Human Protein Atlas]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading016" id="collapse016" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="https://www.proteinatlas.org/download/normal_tissue.tsv.zip">Normal_tissue:</a></li>
+                                <ul>
+                                    <li>Human Protein Atlas version 18.1 and Ensembl version 88.38</li>
+                                    <li>Human Protein Atlas version 19.1 and Ensembl version 92.38</li>
+                                </ul>
+                                <li><a href="https://www.proteinatlas.org/download/pathology.tsv.zip">Pathology:</a></li>
+                                <ul>
+                                    <li>Human Protein Atlas version 18.1 and Ensembl version 88.38</li>
+                                    <li>Human Protein Atlas version 19.1 and Ensembl version 92.38</li>
+                                </ul>
+                                <li><a href="https://www.proteinatlas.org/download/proteinatlas.tsv.zip">ProteinAtlas:</a></li>
+                                <ul>
+                                    <li>Human Protein Atlas version 18.1 and Ensembl version 88.38</li>
+                                    <li>Human Protein Atlas version 19.1 and Ensembl version 92.38</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading015" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse015" aria-expanded="false" aria-controls="collapse015">
+                                Add expression data (RNAseq or Immuno-assays)[Human Protein Atlas]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading015" id="collapse015" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>Release date 23/10/2018: data are based on the Human Protein Atlas version 18.1 and Ensembl version 88.38</li>
+                                <li>Release date 21/01/2020: data are based on the Human Protein Atlas version 19.1 and Ensembl version 92.38</li>      
+                                <li>For more information, click <a href="https://www.proteinatlas.org/about/download">here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading014" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse014" aria-expanded="false" aria-controls="collapse014">
+                                Build tissue-specific expression dataset [Human Protein Atlas]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading014" id="collapse014" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>Release date 23/10/2018: downloaded from the Human Protein Atlas version 18.1 and Ensembl version 88.38. IHC data: normal_tissue.tsv.zip ; RNAseq data: rna_tissue.tsv.zip</li>
+                                <li>Release date 22/01/2020: downloaded from the Human Protein Atlas version 19.1 and Ensembl version 92.38. IHC data: normal_tissue.tsv.zip ; RNAseq data: rna_tissue_consensus.tsv.zip</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading013" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse013" aria-expanded="false" aria-controls="collapse013">
+                                Add protein features (Human, Mouse, Rat) [UniProt]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading013" id="collapse013" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>Annotations have been retrieved from UniProt.org (12/2019)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading01" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                                Add protein features (Human) [neXtProt]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading01" id="collapse01" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="ftp://ftp.nextprot.org/pub/current_release/ac_lists/nextprot_ac_list_all.txt">nextprot_ac_list_all</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="heading012" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse012" aria-expanded="false" aria-controls="collapse012">
+                                Get MS/MS observations in tissue/fluid [Human Peptide Atlas]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading012" id="collapse012" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=432&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Adrenal Gland 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=441&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Brain 2015-01</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=427&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Breast 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=434&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human CSF 2014-09</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=374&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Colon Cancer 2013-02</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=429&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Digestive System 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=430&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Female Reproductive System 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=418&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Heart 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=424&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Kidney 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=425&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Liver 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=419&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Lung 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=431&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Male Reproductive System 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=420&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Pancreas 2014-08</a></li>
+                                <li><a href="http://migale.jouy.inra.fr/Human%20Plasma%20Non-Glyco%20proteome">Human Plasma Non-Glyco 2017-04</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=421&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Spleen 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=463&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Testis 2017-01</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=422&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Urinary Bladder 2014-08</a></li>
+                                <li><a href="https://db.systemsbiology.net/sbeams/cgi/PeptideAtlas/GetProteins?&atlas_build_id=423&display_options=ShowAbundances&organism_id=2&redundancy_constraint=4&presence_level_constraint=1%2C2&gene_annotation_level_constraint=leaf&QUERY_NAME=AT_GetProteins&action=QUERY&output_mode=tsv&apply_action=QUERY">Human Urine 2014-08</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading011" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse011" aria-expanded="false" aria-controls="collapse011">
+                                Get unique peptide SRM-MRM method [Human SRM Atlas]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading011" id="collapse011" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>This tool is using the following source file: HumanSRMAtlasPeptidesFinalAnnotated (2016-04) (Kusebauch et al., 2016, PMID: 27453469); http://www.srmatlas.org/downloads/HumanSRMAtlasPeptidesFinalAnnotated.xlsx</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading010" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse010" aria-expanded="false" aria-controls="collapse010">
+                                GO terms classification and enrichment analysis (Human, Mouse, Rat)[clusterProfiler]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading010" id="collapse010" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>bioconductor-org.hs.eg.db v3.5.0</li>
+                                <li>bioconductor-org.mm.eg.db v3.5.0</li>
+                                <li>bioconductor-org.rn.eg.db v3.5.0</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading09" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse09" aria-expanded="false" aria-controls="collapse09">
+                                Statistical analysis of functional profiles (Human, Mouse) [goProfiles] 
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading09" id="collapse09" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>bioconductor-org.hs.eg.db v3.5.0</li>
+                                <li>bioconductor-org.mm.eg.db v3.5.0</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading08" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse08" aria-expanded="false" aria-controls="collapse08">
+                                Enrichment analysis for Gene Ontology (Human, Mouse, Rat)[topGO]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading08" id="collapse08" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>bioconductor-org.hs.eg.db v3.5.0</li>
+                                <li>bioconductor-org.mm.eg.db v3.5.0</li>
+                                <li>bioconductor-org.rn.eg.db v3.5.0</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading07" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse07" aria-expanded="false" aria-controls="collapse07">
+                                Query pathway database [Reactome] 
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading07" id="collapse07" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>Reactome content-service</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading06" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse06" aria-expanded="false" aria-controls="collapse06">
+                                Pathways identification and coverage [KEGG]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading4" id="collapse06" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>Pathways and KEGG genes IDs are collected via KEGGREST package.</li>
+                            </ul>                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading05" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse05" aria-expanded="false" aria-controls="collapse05">
+                                Pathways visualization of (differentially expressed) genes/proteins [KEGG]
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading05" id="collapse05" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>KEGG Pathways names list</li>
+                                <li>Pathview package doc</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading04" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse04" aria-expanded="false" aria-controls="collapse04">
+                                Biogrid
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading04" id="collapse04" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>BIOGRID-ORGANISM: Human, Mouse, Rattus: downloaded 05/02/2020</li>
+                                <li>BIOGRID-ORGANISM: Human, Mouse, Rattus: downloaded 01/03/2019</li>
+                                <li>NCBI2Reactome (v67 10-12-18)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading03" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse03" aria-expanded="false" aria-controls="collapse03">
+                                Bioplex
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading03" id="collapse03" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>BioPlex_interactionList_v4a.tsv: <a href="http://bioplex.hms.harvard.edu/data/BioPlex_interactionList_v4a.tsv">Version 2.0</a></li>
+                                <li>UniProt2Reactome</li>
+                                <li>NCBI2Reactome (v67 10-12-18)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="heading02" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse02" aria-expanded="false" aria-controls="collapse02">
+                                Humap (Human Protein Complex Map)
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading02" id="collapse02" class="collapse" data-parent="#datasource">
+                        <div class="card-body">
+                            <ul>
+                                <li>nodeTable</li>
+                                <li>pairsWprob</li>
+                                <li>downloaded from : <a href="http://hu.proteincomplexes.org/download">http://hu.proteincomplexes.org/download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <BR>
-            <h4>Data sources: <a href="http://www.proteore.org/static/data_source.html" target="_blank">public resources used by ProteoRE's tools</a></h4>
+            <!--h5>ProteoRE events: <a href="http://www.proteore.org/static/communication.html" target="_blank">training, communication, publication and related links</a></h5-->
+            
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#events" aria-expanded="false" aria-controls="events">
+                    ProteoRE events:training, communication, publication and related links
+                </button>
+            </p>
+              <!-- To display datasource div or a card - class="collapse show" -->
+            <div id="events" class="collapse">
+                <div class="card">
+                    <div id="heading4" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                Community links
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading4" id="collapse4" class="collapse" data-parent="#events">
+                        <div class="card-body">
+                            <ul>
+                                <li><a target="_blank" href="https://toolshed.g2.bx.psu.edu/repository?user_id=dca2dd1ff3407665">ProteoRE tools in the Galaxy Toolshed</a></li>
+                                <li><a target="_blank" href="https://training.galaxyproject.org/training-material/topics/proteomics/">ProteoRE training materials in GTN (Galaxy Training Network)</a></li>
+                                <li><a target="_blank" href="https://galaxyproject.org/use/proteore/">ProteoRE in Galaxy community Hub</a></li>
+                                <li><a target="_blank" href="https://https://bio.tools/ProteoRE">ProteoRE in the <i>bio.tools</i> registry (Elixir)</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div class="card">
+                    <div id="heading3" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Training session
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading3" id="collapse3" class="collapse" data-parent="#events">
+                        <div class="card-body">
+                            <h4>Upcoming events</h4>
+                            <ul>
+                                <li>A one-day ProteoRE training session is organized at the CNRS Thematic school <a href="http://www.bge-lab.fr/Pages/ETP2020.aspx">"Quantitative proteomics and data analysis"-22-26th June <b>2020</b>, Strasbourg, FR.</a></li>
+                                <li>"Using ProteoRE for the functional analysis and the interpretation of proteomics data in biomedical research" - Scheduled for <b>2020</b>, Paris. <a href="mailto:contact@proteore.org">Contact us.</a></li>
+                                <li><b>ProteoRE training session can be also be organized upon request, <a href="mailto:contact@proteore.org">please write us</a></b></li>
+                            </ul>
+                            <h4>Past events</h4>
+                            <ul>            
+                                <li>"Functional analysis and interpretration of proteomics data with ProteoRE" - 10-11th July <b>2019</b>, Rennes, FR. <a href="https://www.biogenouest.org/actualites/article/10-1107-%C2%AB-analyse-fonctionnelle-et-interpretation-de-donnees-de-proteomique-avec-">Registration closed</a></li>
+                                <li>"Functional analysis and interpretration of proteomics data with ProteoRE" - 14-15th March <b>2019</b>, Paris, FR. <a href="https://www.france-bioinformatique.fr/en/evenements/3586">Registration closed</a></li>
+                                <li>"ProteoRE training for ProFI (Proteomics French Infrastructure) people" - 7-8th Feb <b>2019</b>, Grenoble, FR.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>     
+                
+                <div class="card">
+                    <div id="heading2" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Publications
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading2" id="collapse2" class="collapse" data-parent="#events">
+                        <div class="card-body">
+                            <ul>
+                                <li>Vandenbrouck Y, Christiany D, Combes F, Loux V, Brun V. Bioinformatics Tools and Workflow to Select Blood Biomarkers for Early Cancer Diagnosis: An Application to Pancreatic Cancer. Proteomics. <b>2019</b> Nov;19(21-22):e1800489. doi:10.1002/pmic.201800489. <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/31538697">PubMed ID:31538697</a></li>
+                                <li>Nguyen L, Brun V, Combes F, Loux V, Vandenbrouck Y. Designing an In Silico Strategy to Select Tissue-Leakage Biomarkers Using the Galaxy Framework. Methods Mol Biol. <b>2019</b>. 1959:275-289. <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/30852829">PubMed ID: 30852829</a></li>
+                                <li>Lacombe M, Marie-Desvergne C, Combes F, Kraut A, Bruley C, Vandenbrouck Y, Chamel Mossuz V, Couté Y, Brun V. Proteomic characterization of human exhaled breath condensate. J Breath Res. <b>2018</b>. 12(2):021001. <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/29189203">PubMed ID: 29189203</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                 
+
+                <div class="card">
+                    <div id="heading1" class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                Communications
+                            </button>
+                        </h5>
+                    </div>
+                    <div aria-labelledby="heading1" id="collapse1" class="collapse" data-parent="#events">
+                        <div class="card-body">
+                            <ul>
+                                <li>“ProteoRE, a Galaxy-based platform for the annotation and the interpretation of proteomics data in biomedical research”. Combes F., et al. Galaxy Community Conference 2019. July <b>2019</b>, Freiburg, Germany. Oral presentation + demo. <a target="_blank" href="https://gcc2019.sched.com/">gcc2019</a>
+                                <li>“ProteoRE, a Galaxy-based platform for the annotation and the interpretation of proteomics data in biomedical research”. Christiany D., et al. JOBIM conference, July <b>2019</b>. Nantes, France. Oral presentation + demo. <a target="_blank" href="https://jobim2019.sciencesconf.org/data/pages/JOBIM_crop.pdf">Jobim2019</a>
+                                <li>” Exploring the dark side of the Human proteome using the ProteoRE platform”. Vandenbrouck Y. et al., 21st Chromosome-Centric Human Proteome Project. May, <b>2019</b> Saint-Malo, France. Keynote. <a href="https://hupo.org/HUPOST/7314404">https://hupo.org/HUPOST/7314404</a></li>
+                                <li>“ProteoRE, a Galaxy-based infrastructure for annotating and interpreting proteomics data. Combes F. et al., 35th SFEAP congress, Oct. <b>2018</b>, Albi, France. Oral presentation. <a target="_blank" href="http://sfeap2018.ipbs.fr/program/"></a>http://sfeap2018.ipbs.fr/program/</li>
+                                <li>“Using ProteoRE to annotate and explore the human proteome”. Vandenbrouck et al., 12th European Proteomics Association (EuPA), June <b>2018</b>, Santiago, Spain. Oral presentation. <a target="_blank" href="http://www.eupa2018.com/images/program/0112139_PROGRAMA_V5.pdf">http://www.eupa2018.com/images/program/0112139_PROGRAMA_V5.pdf</a></li>
+                                <li>“ProteoRE, a Galaxy-based infrastructure for annotating and interpreting proteomics data”. Combes F. et al., JOBIM July <b>2018</b>, Marseille, France. Poster presentation. <a target="_blank" href="https://jobim2018.sciencesconf.org/data/pages/Book_JOBIM2018_V3.pdf">https://jobim2018.sciencesconf.org/data/pages/Book_JOBIM2018_V3.pdf</a></li>
+                                <li>ProteoRE, a Galaxy-based infrastructure for interpreting and exploring mass spectrometry-based proteomics data. Nguyen L., et al., 16th Human Proteome Organization World Congress (HUPO) Sept. <b>2017</b>, Dublin, Ireland. Poster presentation. <a target="_blank" href="http://hupo2017.ie/wp-content/uploads/2017/05/HUPO2017_Programme_Posters.pdf">http://hupo2017.ie/wp-content/uploads/2017/05/HUPO2017_Programme_Posters.pdf</a></li>
+                                <li>“ProteoRE, a Galaxy-based infrastructure for interpreting and exploring mass spectrometry-based proteomics data”. Nguyen L., et al. Galaxy Community Conference 2017. June <b>2017</b>, Montpellier, France. Poster presentation. <a target="_blank" href="https://gcc2017.sched.com/event/B8U9/p17-proteore-a-galaxy-based-infrastructure-for-interpreting-and-exploring-mass-spectrometry-based-proteomics-data">https://gcc2017.sched.com/event/B8U9/p17-proteore-a-galaxy-based-infrastructure-for-interpreting-and-exploring-mass-spectrometry-based-proteomics-data</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+            
             <BR>
-            <h4>Support, feedbacks, contribution: <a href="mailto:contact@proteore.org">contact@proteore.org</a></h4>
+            <h5>Support, feedbacks, contribution: <a href="mailto:contact@proteore.org">contact@proteore.org</a></h5>
             <BR>
             <footer>
-                <h3>Fundings</h3>
+                <h4>Fundings</h4>
                 ProteoRE project is a joint national effort between the <a target="_blank" class="reference" href="http://www.france-bioinformatique.fr/en">French bioinformatics Institute (IFB)</a> and the <a target="_blank" class="reference" href="http://www.profiproteomics.fr/">Proteomics French Infrastructure (ProFI)</a> and is funded by the <a target="_blank" class="reference" href="http://www.agence-nationale-recherche.fr/en/">French Research Agency</a> (ANR-11-INBS-0013).<br/>
                 <BR>
                 <img src="images/ifb.png/" width="100px">
@@ -111,5 +660,10 @@
                 <BR>
             </footer>
         </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     </body>
 </html>

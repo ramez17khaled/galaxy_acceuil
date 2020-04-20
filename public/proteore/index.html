@@ -5,7 +5,7 @@
         <meta name="description" content="The French Galaxy Instance">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
@@ -21,14 +21,19 @@
                 </div>
             </div>
 
-            <iframe class="embed-responsive-item" src="../common/messages.html" width="100%" height="350px "style="border:0px"></iframe> <!-- height="140px -->
+            <div class="alert alert-secondary" role="alert">
+              By using this Galaxy instance, we assume that you have read and accept the <a href="https://ifb-elixirfr.gitlab.io/usegalaxy-fr/welcome//common/terms.html" target="_parent">Term Of Use</a><br/>
+              For any questions or support: <a href="https://community.france-bioinformatique.fr/c/galaxy/proteore/" target="_blank">community.france-bioinformatique.fr/c/galaxy/proteore/</a>
+            </div>
+
+            <iframe class="embed-responsive-item" src="../common/messages.html" width="100%" height="250px "style="border:0px"></iframe> <!-- height="140px -->
 
             <div class="container" style="text-align:justify">
                 <p class="lead">
             <h2>What is ProteoRE ?</h2>
-                    ProteoRE (Proteomics Research Environment) is a Galaxy-based platform for the interpretation and the exploration of proteomics and transcriptomics data in biomedical research; 
-                    it allows researchers to apply a large range of dedicated bioinformatics tools and data analysis workflows on their data, share their analyses with others, and enable tiers to reuse the same analysis while keeping tracks of the overall process. 
-                    The ProteoRE 2.1 version now comprises <b>20 tools</b> organized into four subsections: 
+                    ProteoRE (Proteomics Research Environment) is a Galaxy-based platform for the interpretation and the exploration of proteomics and transcriptomics data in biomedical research;
+                    it allows researchers to apply a large range of dedicated bioinformatics tools and data analysis workflows on their data, share their analyses with others, and enable tiers to reuse the same analysis while keeping tracks of the overall process.
+                    The ProteoRE 2.1 version now comprises <b>20 tools</b> organized into four subsections:
                     <ol>
                         <li>data manipulation and visualization</li>
                         <li>get features/annotation</li>
@@ -125,7 +130,7 @@
                     </div>
                     <div aria-labelledby="heading2" id="collapse2" class="collapse" data-parent="#changelog">
                         <div class="card-body">
-                            <b>Updates</b>: 
+                            <b>Updates</b>:
                             <ul>
                                 <li>Filter by keywords or numerical value: You can now filter by a range of values, choose an operator to use when multiple filters are set (AND or OR) and sort your result files</li>
                                 <li>ID converter: the Mus musculus species is now available for id conversion, update of reference mapping file for id conversion, from Uniprot and neXtProt files (12/09/18)</li>
@@ -258,7 +263,7 @@
                         <div class="card-body">
                             <ul>
                                 <li>Release date 23/10/2018: data are based on the Human Protein Atlas version 18.1 and Ensembl version 88.38</li>
-                                <li>Release date 21/01/2020: data are based on the Human Protein Atlas version 19.1 and Ensembl version 92.38</li>      
+                                <li>Release date 21/01/2020: data are based on the Human Protein Atlas version 19.1 and Ensembl version 92.38</li>
                                 <li>For more information, click <a href="https://www.proteinatlas.org/about/download">here</a></li>
                             </ul>
                         </div>
@@ -390,7 +395,7 @@
                     <div id="heading09" class="card-header">
                         <h5 class="mb-0">
                             <button class="btn btn-link" data-toggle="collapse" data-target="#collapse09" aria-expanded="false" aria-controls="collapse09">
-                                Statistical analysis of functional profiles (Human, Mouse) [goProfiles] 
+                                Statistical analysis of functional profiles (Human, Mouse) [goProfiles]
                             </button>
                         </h5>
                     </div>
@@ -427,7 +432,7 @@
                     <div id="heading07" class="card-header">
                         <h5 class="mb-0">
                             <button class="btn btn-link" data-toggle="collapse" data-target="#collapse07" aria-expanded="false" aria-controls="collapse07">
-                                Query pathway database [Reactome] 
+                                Query pathway database [Reactome]
                             </button>
                         </h5>
                     </div>
@@ -452,7 +457,7 @@
                         <div class="card-body">
                             <ul>
                                 <li>Pathways and KEGG genes IDs are collected via KEGGREST package.</li>
-                            </ul>                
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -535,7 +540,7 @@
             </div>
             <BR>
             <!--h5>ProteoRE events: <a href="http://www.proteore.org/static/communication.html" target="_blank">training, communication, publication and related links</a></h5-->
-            
+
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#events" aria-expanded="false" aria-controls="events">
                     ProteoRE events:training, communication, publication and related links
@@ -561,8 +566,8 @@
                                 </ul>
                         </div>
                     </div>
-                </div>    
-                
+                </div>
+
                 <div class="card">
                     <div id="heading3" class="card-header">
                         <h5 class="mb-0">
@@ -580,15 +585,15 @@
                                 <li><b>ProteoRE training session can be also be organized upon request, <a href="mailto:contact@proteore.org">please write us</a></b></li>
                             </ul>
                             <h4>Past events</h4>
-                            <ul>            
+                            <ul>
                                 <li>"Functional analysis and interpretration of proteomics data with ProteoRE" - 10-11th July <b>2019</b>, Rennes, FR. <a href="https://www.biogenouest.org/actualites/article/10-1107-%C2%AB-analyse-fonctionnelle-et-interpretation-de-donnees-de-proteomique-avec-">Registration closed</a></li>
                                 <li>"Functional analysis and interpretration of proteomics data with ProteoRE" - 14-15th March <b>2019</b>, Paris, FR. <a href="https://www.france-bioinformatique.fr/en/evenements/3586">Registration closed</a></li>
                                 <li>"ProteoRE training for ProFI (Proteomics French Infrastructure) people" - 7-8th Feb <b>2019</b>, Grenoble, FR.</li>
                             </ul>
                         </div>
                     </div>
-                </div>     
-                
+                </div>
+
                 <div class="card">
                     <div id="heading2" class="card-header">
                         <h5 class="mb-0">
@@ -606,7 +611,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>                 
+                </div>
 
                 <div class="card">
                     <div id="heading1" class="card-header">
@@ -630,10 +635,10 @@
                             </ul>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
-            
-            
+
+
             <BR>
             <h5>Support, feedbacks, contribution: <a href="mailto:contact@proteore.org">contact@proteore.org</a></h5>
             <BR>

@@ -24,7 +24,7 @@
       <iframe class="embed-responsive-item" src="../common/messages.html" width="100%" height="250px "style="border:0px"></iframe> <!-- height="140px -->
 
       <div class="alert alert-success" role="alert">
-          <h2>Current version:  3.3</h2>
+          <h2>Current version:  4.0</h2>
           <strong>Publication:</strong> Franck Giacomoni, Gildas Le Corguillé, Misharl Monsoor, Marion Landi, Pierre Pericard, Mélanie Pétéra, Christophe Duperier, Marie Tremblay-Franco, Jean-François Martin, Daniel Jacob, Sophie Goulitquer, Etienne A. Thévenot and Christophe Caron (2014). <strong>Workflow4Metabolomics: A collaborative research infrastructure for computational metabolomics</strong>. Bioinformatics  <a href="http://bioinformatics.oxfordjournals.org/content/early/2014/12/18/bioinformatics.btu813" target="_blank">doi:10.1093/bioinformatics/btu813</a>
       </div>
 
@@ -57,6 +57,45 @@
           </div>
         </div>
         -->
+        <div class="card">
+          <div  id="heading13" class="card-header">
+            <h5 class="mb-0">
+              <button  aria-controls="collapse13"  data-target="#collapse13" class="btn btn-link" data-toggle="collapse" aria-expanded="true">
+                4.0.0 - 2020-07-08
+              </button>
+            </h5>
+          </div>
+          <div aria-labelledby="heading13" id="collapse13" class="collapse show" data-parent="#changelog">
+            <div class="card-body">
+              <ul>
+                <li><h5>Galaxy</h5>
+                  <ul>
+                    <li><b>NEW</b> - Workflow4Metabolomics is now deployed as a subdomain of <a href="usegalaxy.fr">https://usegalaxy.fr</a> maintained by the <a href="https://www.france-bioinformatique.fr/en" target="_blank">IFB</a> Core Cluster Task-Force</li>
+                    <li><b>UPGRADE</b> - <a href="usegalaxy.fr">https://usegalaxy.fr</a> is more up-to-date than our previous dedicated instance, in particular regarding Galaxy management.
+                  </ul>
+                </li>
+                <li><h5>Workflow4Metabolomics</h5>
+                  <ul>
+                    <li><b>NEW</b> - The tools within the tool panel (on the left side) have been sorted in a different order than in the previous instance: the sections are now organised by step. This choice enables better tool management by avoiding tool duplication.</li>
+                    <li><b>NEW</b> - For any questions or support, we now use the IFB forum: <a href="https://community.france-bioinformatique.fr/c/workflow4metabolomics/" target="_blank">community.france-bioinformatique.fr/c/workflow4metabolomics/</a></li>
+                  </ul>
+                </li>
+                <li><h5>MSMS</h5>
+                  <ul>
+                    <li><b>NEW</b> - We are glad to provide a new workflow for MSMS analysis in collaboration with the Computational Metabolomics Research Group of <a href="http://www.birmingham.ac.uk/index.aspx" target="_blank">the University of Birmingham (United Kingdom)</a></li>
+                    <li><b>NEW</b> - New tools: msPurity suite, MetFrag, SIRIUS-CSI:FingerID</li>
+                  </ul>
+                </li>
+                <li><h5>ALL</h5>
+                  <ul>
+                    <li><b>NEW</b> - Tool: Metabolights downloader - Import public and private MetaboLights studies directly into Galaxy</li>
+                    <li><b>NEW</b> - Tools: ISA to * - ISA converters</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="card">
           <div id="heading12" class="card-header">
             <h5 class="mb-0">
@@ -486,10 +525,57 @@
 
 
       <hr />
-      <div width="auto" align="center">
+      <div class="container">
           <img src="images/workflow_w4m_HD.png" style="max-width:1500px;width:95%;" /><br/>
-          <hr />
-          <img src="images/workflow_community_SD.png" style="max-width:1000px;width:95%;" />
+      </div>
+      <hr/>
+      <div class="container">
+        <h4>Research Infrastructures / Funders:</h4>
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <a href="https://www.france-bioinformatique.fr/en" target="_blank"><center><img src="../base/images/logo_funders/ifb.png" style="width:50%;" /></center></a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.metabohub.fr/home.html" target="_blank"><center><img src="../base/images/logo_funders/metabohub.png" style="width:50%;" /></center></a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.auvergnerhonealpes.fr/" target="_blank"><center><img src="../base/images/logo_funders/region-auvergne-rhone-alpes.png" style="width:50%;" /></center></a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.bretagne.bzh/" target="_blank"><center><img src="../base/images/logo_funders/region-bretagne.png" style="width:35%;" /></center></a>
+          </div>
+          <div class="w-100"></div> <!-- https://getbootstrap.com/docs/4.0/layout/grid/#equal-width-multi-row -->
+        </div>
+      </div>
+
+      <div class="container">
+        <h4>Affiliation:</h4>
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <a href="http://www.cea.fr/english" target="_blank"><center><img src="../base/images/logo_tutelle/cea.png" style="width:33%;" /></center></a>
+          </div>
+          <div class="col-sm">
+            <a href="http://www.cnrs.fr/en" target="_blank"><center><img src="../base/images/logo_tutelle/cnrs.jpg" style="width:33%;" /></center></a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.inrae.fr/" target="_blank"><center><img src="../base/images/logo_tutelle/inrae.png" style="width:50%;" /></center></a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.laberca.org" target="_blank"><center><img src="../base/images/logo_tutelle/laberca.jpg" style="width:50%;" /></center></a>
+          </div>
+          <div class="w-100"></div> <!-- https://getbootstrap.com/docs/4.0/layout/grid/#equal-width-multi-row -->
+          <div class="col-sm">
+            <a href="https://www.birmingham.ac.uk" target="_blank"><center><img src="../base/images/logo_tutelle/university-birmingham.jpg" style="width:50%;" /></center></a>
+          </div>
+          <div class="col-sm">
+            <a href="http://www.sorbonne-universite.fr/" target="_blank"><center><img src="../base/images/logo_tutelle/university-sorbonne.jpg" style="width:50%;" /></center></a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.ulb.be/" target="_blank"><center><img src="../base/images/logo_tutelle/university-ulb.jpg" style="width:50%;" /></center></a>
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
       </div>
 
       <div class="embed-responsive embed-responsive-16by9">

@@ -19,6 +19,111 @@
       <br /><br />
       <iframe class="embed-responsive-item, common_message" src="../common/messages.html"></iframe>
 
+      <h3>Covid19 - Workflows maintained by <a href="https://github.com/iwc-workflows" target="_blank">IWC</a></h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Workflow name</th>
+            <th scope="col">Purpose</th>
+            <th scope="col">Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">COVID-19: variation analysis on ARTIC PE data 0.4.1</th>
+            <td>
+              Annotation: The workflow for Illumina-sequenced ARTIC data builds on the RNASeq
+              workflow for paired-end data using the same steps for mapping and variant calling,
+              but adds extra logic for trimming ARTIC primer sequences off reads with the ivar package.
+              In addition, this workflow uses ivar also to identify amplicons affected by ARTIC
+              primer-binding site mutations and excludes reads derived from such tainted amplicons
+              when calculating allele-frequencies of other variants.
+            </td>
+            <td>
+              <a href="https://covid19.usegalaxy.fr/u/emergen-airflow/w/covid-19-variation-analysis-on-artic-pe-data-041"><img src="../base/images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a href="https://workflowhub.eu/workflows/110?version=5"><img src="../base/images/workflowhub.png" height="40px"></a>
+              <a href="https://github.com/iwc-workflows/sars-cov-2-pe-illumina-artic-variant-calling"><img src="../base/images/github.png" height="40px"></a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">COVID-19: SARS-CoV-2 Illumina Amplicon pipeline - iVar based 0.1</th>
+            <td>
+              Annotation: Find and annotate variants in SARS-CoV-2 samples sequenced with Illumina ARTICv3
+            </td>
+            <td>
+              <a href="https://covid19.usegalaxy.fr/u/emergen-airflow/w/sars-cov-2-illumina-amplicon-pipeline---ivar-based-imported-from-uploaded-file"><img src="../base/images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a href="https://workflowhub.eu/workflows/155?version=1"><img src="../base/images/workflowhub.png" height="40px"></a>
+              <a href="https://github.com/iwc-workflows/sars-cov-2-pe-illumina-artic-ivar-analysis"><img src="../base/images/github.png" height="40px"></a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">COVID-19: variation analysis on WGS PE data 0.2.1</th>
+            <td>
+              Annotation: This workflows performs paired end read mapping with bwa-mem followed by sensitive variant calling across a wide range of AFs with lofreq
+            </td>
+            <td>
+              <a href="https://covid19.usegalaxy.fr/u/emergen-airflow/w/covid-19-variation-analysis-on-wgs-pe-data-021"><img src="../base/images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a href="https://workflowhub.eu/workflows/113?version=3"><img src="../base/images/workflowhub.png" height="40px"></a>
+              <a href="https://github.com/iwc-workflows/sars-cov-2-pe-illumina-wgs-variant-calling"><img src="../base/images/github.png" height="40px"></a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">COVID-19: variation analysis on WGS SE data 0.1.2</th>
+            <td>
+              Annotation: This workflows performs single end read mapping with bowtie2 followed by sensitive variant calling across a wide range of AFs with lofreq
+            </td>
+            <td>
+              <a href="https://covid19.usegalaxy.fr/u/emergen-airflow/w/covid-19-variation-analysis-on-wgs-se-data-012"><img src="../base/images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a href="https://workflowhub.eu/workflows/112?version=2"><img src="../base/images/workflowhub.png" height="40px"></a>
+              <a href="https://github.com/iwc-workflows/sars-cov-2-se-illumina-wgs-variant-calling"><img src="../base/images/github.png" height="40px"></a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">COVID-19: variation analysis of ARTIC ONT data 0.2.1</th>
+            <td>
+              Annotation: This workflow for ONT-sequenced ARTIC data is modeled
+              after the alignment/variant-calling steps of the <a href="https://artic.readthedocs.io/en/latest/" target="_blank">ARTIC pipeline</a>.
+              It performs, essentially, the same steps as that pipeline’s minion command,
+              i.e. read mapping with minimap2 and variant calling with medaka.
+              Like the Illumina ARTIC workflow it uses ivar for primer trimming.
+              Since ONT-sequenced reads have a much higher error rate than Illumina-sequenced reads and
+              are therefor plagued more by false-positive variant calls, this workflow does make
+              no attempt to handle amplicons affected by potential primer-binding site mutations.
+            </td>
+            <td>
+              <a href="https://covid19.usegalaxy.fr/u/emergen-airflow/w/covid-19-variation-analysis-of-artic-ont-data"><img src="../base/images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a href="https://workflowhub.eu/workflows/111?version=3"><img src="../base/images/workflowhub.png" height="40px"></a>
+              <a href="https://github.com/iwc-workflows/sars-cov-2-ont-artic-variant-calling"><img src="../base/images/github.png" height="40px"></a>
+            </td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">COVID-19: consensus construction 0.2.1</th>
+            <td>
+              Annotation: Build a consensus sequence from FILTER PASS variants with intrasample
+              allele-frequency above a configurable consensus threshold. Hard-mask regions with
+              low coverage (but not consensus variants within them) and ambiguous sites.
+            </td>
+            <td>
+              <a href="https://covid19.usegalaxy.fr/u/emergen-airflow/w/covid-19-consensus-construction-021"><img src="../base/images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a href="https://workflowhub.eu/workflows/138?version=2"><img src="../base/images/workflowhub.png" height="40px"></a>
+              <a href="https://github.com/iwc-workflows/sars-cov-2-consensus-from-variation"><img src="../base/images/github.png" height="40px"></a>
+            </td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">COVID-19: variation analysis reporting 0.1.1</th>
+            <td>
+              Annotation: This workflow takes table of variants produced
+              by any of the other four variant calling workflows in <a href="https://github.com/galaxyproject/iwc/tree/main/workflows/sars-cov-2-variant-calling" target="_blank">IWC</a>
+              and generates a list of variants by Samples and by Variant.
+            </td>
+            <td>
+              <a href="https://covid19.usegalaxy.fr/u/emergen-airflow/w/covid-19-variation-analysis-reporting"><img src="../base/images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a href="https://workflowhub.eu/workflows/109?version=2"><img src="../base/images/workflowhub.png" height="40px"></a>
+              <a href="https://github.com/iwc-workflows/sars-cov-2-variation-reporting"><img src="../base/images/github.png" height="40px"></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
       <iframe class="embed-responsive-item, footer_message" src="../common/footer.html"></iframe>
     </div>

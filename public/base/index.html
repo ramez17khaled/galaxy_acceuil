@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="../common/style.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
 
   <body>
@@ -29,77 +30,53 @@
 
       <iframe class="embed-responsive-item, common_message" src="../common/messages.html"></iframe>
 
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner" background-color>
-          <div class="carousel-item active">
-            <div class="jumbotron jumbotron-fluid">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-2"></div>
-                  <div class="col-sm-2">
-                    <img class="img-fluid" src="./images/w4m.png">
-                  </div>
-                  <div class="col-sm-6">
-                    <h1 class="display-4">Workflow4Metabolomics</h1>
-                    <p class="lead">The thematic dedicated to metabolomics data processing, analysis and annotation for Metabolomics community</p>
-                    <a class="btn btn-primary btn-lg" href="https://workflow4metabolomics.usegalaxy.fr" target="_top">Go to the thematic instance</a></p>
-                  </div>
-                  <div class="col-sm-2"></div>
-                </div>
-              </div>
-            </div>
+      <h2>Domain specific subdomains:</h2>
+      <p>The same instance but with only the dedicated tools in order to focus on the domain</p>
+      <br/>
+      <div class="container" id="subdomains">
+        <div class="row">
+          <div class="col-md-1">
+            <a href='https://workflow4metabolomics.usegalaxy.fr' target="_parent"><img src="./images/w4m.png" alt="W4M"></a>
           </div>
-          <div class="carousel-item">
-            <div class="jumbotron jumbotron-fluid">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-2"></div>
-                  <div class="col-sm-2">
-                    <img class="img-fluid" src="./images/proteore.png">
-                  </div>
-                  <div class="col-sm-6">
-                    <h1 class="display-4">ProteoRE</h1>
-                    <p class="lead">The thematic for functional analysis and exploration of proteomics and transcriptomics data in biomedical research</p>
-                    <a class="btn btn-primary btn-lg" href="https://proteore.usegalaxy.fr" target="_top">Go to ProteoRE thematic</a></p>
-                  </div>
-                  <div class="col-sm-2"></div>
-                </div>
-
-              </div>
-            </div>
+          <div class="col-md-3">
+            <h5>Workflow4Metabolomics</h5>
+            <p>Metabolomics data processing, analysis and annotation for Metabolomics community</p>
           </div>
-          <div class="carousel-item">
-            <div class="jumbotron jumbotron-fluid">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-2"></div>
-                  <div class="col-sm-2">
-                    <img class="img-fluid" src="./images/galaxycat.png">
-                  </div>
-                  <div class="col-sm-6">
-                    <h1 class="display-4">Ask the GalaxyCat</h1>
-                    <p class="lead">Can't find a tool on usegalaxy.fr?<br/>Why not search on the IFB Galaxy Catalog ?</p>
-                    <a class="btn btn-primary btn-lg" href="http://galaxycat.france-bioinformatique.fr" target="_top">Go to the GalaxyCat</a></p>
-                  </div>
-                  <div class="col-sm-2"></div>
-                </div>
-
-              </div>
-            </div>
+          <div class="col-md-1">
+            <a href='https://covid19.usegalaxy.fr' target="_parent"><img src="./images/covid19.png" alt="Covid19"></a>
+          </div>
+          <div class="col-md-3">
+            <h5>Covid19</h5>
+            <p>Variant analysis, consensus using communuty approuved workflows and datasets.</p>
+          </div>
+          <div class="col-md-1">
+            <a href='https://metabarcoding.usegalaxy.fr' target="_parent"><img src="./images/metabarcoding.png" alt="Metabarcoding"></a>
+          </div>
+          <div class="col-md-3">
+            <h5>Metabarcoding</h5>
+            <p>FROGS, Qiime, Mothur, Obitools, DADA2, PICRUSt</p>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="row">
+          <div class="col-md-1">
+            <a href='https://proteore.usegalaxy.fr' target="_parent"><img src="./images/proteore.png" alt="ProteoRE"></a>
+          </div>
+          <div class="col-md-3">
+            <h5>ProteoRE</h5>
+            <p>Functional analysis and exploration of proteomics and transcriptomics data in biomedical research.</p>
+          </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3">
+            </div>
+          <div class="col-md-1">
+            <a href='http://galaxycat.france-bioinformatique.fr' target="_parent"><img src="./images/galaxycat.png" alt="GalaxyCat"></a>
+          </div>
+          <div class="col-md-3">
+            <h5>Ask the GalaxyCat</h5>
+            <p>Can't find a tool here or elsewhere? Why not search on the IFB Galaxy Catalog ?</p>
+          </div>
+        </div>
       </div>
 
       <iframe class="embed-responsive-item, footer_message" src="../common/footer.html"></iframe>

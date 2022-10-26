@@ -5,6 +5,14 @@
   border:0px
 }
 
+
+.news_iframe {
+  height:100px;
+  width:100%;
+  border:0px
+}
+.alert.info {background-color: rgb(199, 230, 199) ;}
+
 .footer_iframe {
   height:300px;
   width:100%;
@@ -12,17 +20,45 @@
 }
 
 .subdomains_iframe {
-  height:375px;
+  height:400px;
   width:100%;
   border:0px
 }
 
 .services_iframe {
-  height:230px;
+  float:left;
+  height:400px;
   width:100%;
   border:0px
 }
 
 #subdomains img {
   width: 75px;
+  float: left;
+  margin-right: 15px;
+}
+
+.box{
+    width:50%;
+    float:inline-start;
+    background-position:center;
+}
+
+.subdomains {
+  display:flex;
+  align-items: top;
+}
+
+.flex-item {
+  flex-grow: 1;
+  
+}
+
+.heading {
+  text-align:top;
+}
+
+.text {
+  text-align:justify;
+  margin-right: 50px;  
 }

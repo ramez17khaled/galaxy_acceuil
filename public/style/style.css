@@ -1,6 +1,6 @@
 
 .messages_iframe {
-  height:300px;
+  height:auto;
   width:100%;
   border:0px
 }
@@ -20,14 +20,14 @@
 }
 
 .subdomains_iframe {
-  height:400px;
+  height:auto;
   width:100%;
   border:0px
 }
 
 .services_iframe {
   float:left;
-  height:400px;
+  height:auto;
   width:100%;
   border:0px
 }

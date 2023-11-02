@@ -16,6 +16,7 @@
 </head>
 
   <body>
+    <iframe class="embed-responsive-item, messages_iframe" src="../common/messages.html" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
 
     <div class="container-fluid">
         <a  href="https://www.southgreen.fr/">
@@ -58,7 +59,7 @@
         
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class = "pics"  src="./images/slideshow/scaffremodeler.png" class="d-block" alt="...">
+                <img class = "pics"  src="./images/slideshow/scaffremodeler.png" class="d-block" alt="scaffremodeler output image">
                 <div style="margin-right: 200px;">
                   <hr>
                   <h3>Structural variations</h3> 
@@ -66,7 +67,7 @@
                 </div>
                </div>
               <div class="carousel-item">
-                <img class = "pics"  src="./images/slideshow/circos.jpg" class="d-block" alt="...">
+                <img class = "pics"  src="./images/slideshow/circos.jpg" class="d-block" alt="circos from TraceAncestor">
                 <div style="margin-right: 200px;">
                   <hr>
                   <h3>Mosaic genome reconstruction </h3>
@@ -74,7 +75,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img class = "pics"  src="./images/slideshow/mdsplot.png" class="d-block" alt="...">
+                <img class = "pics"  src="./images/slideshow/mdsplot.png" class="d-block" alt="mdsplot from sniplay">
                 <div style="margin-right: 100px;">
                   <hr>
                   <h3>SNP analysis</h3>
@@ -82,7 +83,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img class = "pics" src="./images/slideshow/tree.jpg" class="d-block" alt="...">
+                <img class = "pics" src="./images/slideshow/tree.jpg" class="d-block" alt="gene family tree">
                 <div style="margin-right: 200px;">
                   <hr>
                   <h3>Gene families</h3>
@@ -90,7 +91,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img class = "pics" src="./images/slideshow/Manhattan_Plot.png" class="d-block" alt="...">
+                <img class = "pics" src="./images/slideshow/Manhattan_Plot.png" class="d-block" alt="Manhattan plot from SNiPlay3 GWAS workflow">
                 <div style="margin-right: 200px; ">
                   <hr>
                   <h3>GWAS</h3>
@@ -98,7 +99,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img class = "pics" src="./images/slideshow/chrom_reconstruction.png" class="d-block" alt="...">
+                <img class = "pics" src="./images/slideshow/chrom_reconstruction.png" class="d-block" alt="Scaffrehunter chromosome reconstruction">
                 <div style="margin-right: 200px;">
                   <hr>
                   <h3>Chromosome reconstruction</h3>
@@ -109,22 +110,22 @@
             </div>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  class="active thumbnail" style="width: 110px; bottom: 10px;"  aria-current="true" aria-label="Slide 1">
-                  <img src="./images/slideshow/scaffremodeler.png" class="d-block w-100" alt="...">
+                  <img src="./images/slideshow/scaffremodeler.png" class="d-block w-100" alt="scaffremodeler output image">
                 </button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="thumbnail" aria-label="Slide 2">
-                  <img src="./images/slideshow/circos.jpg" class="d-block w-100" alt="...">
+                  <img src="./images/slideshow/circos.jpg" class="d-block w-100" alt="circos from TraceAncestor">
                 </button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="thumbnail" aria-label="Slide 3">
-                  <img src="./images/slideshow/mdsplot.png" class="d-block w-100" alt="...">
+                  <img src="./images/slideshow/mdsplot.png" class="d-block w-100" alt="mdsplot from sniplay">
                 </button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="thumbnail" aria-label="Slide 4">
-                  <img  src="./images/slideshow/tree.jpg" class="d-block w-100" alt="...">
+                  <img  src="./images/slideshow/tree.jpg" class="d-block w-100" alt="gene family tree">
                 </button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="thumbnail" aria-label="Slide 5">
-                  <img src="./images/slideshow/Manhattan_Plot.png" class="d-block w-100" alt="...">
+                  <img src="./images/slideshow/Manhattan_Plot.png" class="d-block w-100" alt="Manhattan plot from SNiPlay3 GWAS workflow">
                 </button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="thumbnail" style="margin-top: 12px;" aria-label="Slide 6">
-                    <img src="./images/slideshow/chrom_reconstruction.png" class="d-block w-100" alt="...">
+                    <img src="./images/slideshow/chrom_reconstruction.png" class="d-block w-100" alt="Scaffrehunter chromosome reconstruction">
                   </button>
   
               </div>
@@ -174,7 +175,6 @@
       </div>
        <!-- footer  -->
       <hr />
-      <iframe class="embed-responsive-item, messages_iframe" src="../common/messages.html" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
       <iframe class="embed-responsive-item, services_iframe" src="../common/services.html" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
       <iframe class="embed-responsive-item, subdomains_iframe" src="../common/subdomains.html" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
       <iframe class="embed-responsive-item, footer_iframe" src="../common/footer.html" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>

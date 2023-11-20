@@ -8,14 +8,18 @@ body{
 	}
 
 .carousel-indicators button.thumbnail {
-	position: relative;
+	margin: 5vh;
 	width:90px;
+	
 	}
 	
+.container-logos {
+      	margin-left: -60vh;
+}
 
 .carousel-inner {
 	position: relative;
-	left: 35.5vw;
+	left: 20vw;
 	top: 7vh;
 	margin-bottom: 100px;
 	max-width: 700px;
@@ -31,7 +35,7 @@ body{
 }
 .carousel-control-prev-icon{
 	position: relative;
-	left: 23vw;
+	left: 8vw;
 	top:2vh;
 	background-color: green;
 	
@@ -42,7 +46,7 @@ body{
 }
 .carousel-control-next-icon{
 	position: relative;
-	right: 25vw;
+	right: 37vw;
 	top:2vh;
 	background-color: green;
 	

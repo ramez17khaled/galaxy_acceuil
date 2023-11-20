@@ -14,7 +14,7 @@ body{
 	}
 	
 .container-logos {
-      	margin-left: -60vh;
+      	margin-left: -30vh;
 }
 
 .carousel-inner {
@@ -25,7 +25,7 @@ body{
 	max-width: 700px;
 }	
 .carousel-indicators button.thumbnail:not(.active) {
-	opacity:0.5;
+	opacity:0.4;
 	}
 	
 .carousel-indicators{
@@ -46,7 +46,7 @@ body{
 }
 .carousel-control-next-icon{
 	position: relative;
-	right: 37vw;
+	right: 28vw;
 	top:2vh;
 	background-color: green;
 	

@@ -1,0 +1,56 @@
+body{
+	overflow-x: hidden;
+
+}
+.pics{
+	width: 500px;
+	height: 450px;
+	}
+
+.carousel-indicators button.thumbnail {
+	position: relative;
+	width:90px;
+	}
+	
+
+.carousel-inner {
+	position: relative;
+	left: 35.5vw;
+	top: 7vh;
+	margin-bottom: 100px;
+	max-width: 700px;
+}	
+.carousel-indicators button.thumbnail:not(.active) {
+	opacity:0.5;
+	}
+	
+.carousel-indicators{
+	position: static;
+	margin: auto;
+	text-align: center;
+}
+.carousel-control-prev-icon{
+	position: relative;
+	left: 23vw;
+	top:2vh;
+	background-color: green;
+	
+}
+.carousel-control-prev{
+	background-color: light-green;
+	
+}
+.carousel-control-next-icon{
+	position: relative;
+	right: 25vw;
+	top:2vh;
+	background-color: green;
+	
+}
+
+@media screen and (min-width:992px)
+.carousel{
+	max-width:70%;
+	margin: 0 auto;
+}
+

@@ -8,13 +8,13 @@ body{
 	}
 
 .carousel-indicators button.thumbnail {
-	margin: 5vh;
+	margin: 1vh;
 	width:90px;
 	
 	}
 	
 .container-logos {
-      	margin-left: -30vh;
+      	margin-left: -60vh;
 }
 
 .carousel-inner {

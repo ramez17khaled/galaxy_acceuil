@@ -3,23 +3,23 @@ body{
 
 }
 .pics{
-	width: 500px;
-	height: 450px;
+	width: 300px;
+	height: 250px;
 	}
 
 .carousel-indicators button.thumbnail {
-	margin: 5vh;
+	margin: 1vh;
 	width:90px;
 	
 	}
 	
 .container-logos {
-      	margin-left: -30vh;
+      	margin-left: -60vh;
 }
 
 .carousel-inner {
 	position: relative;
-	left: 20vw;
+	left: 20vh;
 	top: 7vh;
 	margin-bottom: 100px;
 	max-width: 700px;
@@ -35,7 +35,6 @@ body{
 }
 .carousel-control-prev-icon{
 	position: relative;
-	left: 8vw;
 	top:2vh;
 	background-color: green;
 	
@@ -46,7 +45,7 @@ body{
 }
 .carousel-control-next-icon{
 	position: relative;
-	right: 28vw;
+	right: 45vh;
 	top:2vh;
 	background-color: green;
 	

@@ -2,37 +2,45 @@ body{
 	overflow-x: hidden;
 
 }
+
 .pics{
-	width: 300px;
-	height: 250px;
+	position: relative;
+	width: 350px;
+	height: 300px;
+	left: 5vh;
+	margin-top: 0vh;
 	}
 
 .carousel-indicators button.thumbnail {
-	margin: 1vh;
-	width:90px;
+	top: 0vh;
+	width:50px;
+	padding: 40px;
+
 	
 	}
 	
 .container-logos {
-      	margin-left: -60vh;
+      	margin-left: -8vh;
+
 }
 
 .carousel-inner {
 	position: relative;
-	left: 20vh;
-	top: 7vh;
+	left: 37vh;
 	margin-bottom: 100px;
 	max-width: 700px;
 }	
 .carousel-indicators button.thumbnail:not(.active) {
 	opacity:0.4;
+
 	}
 	
 .carousel-indicators{
-	position: static;
-	margin: auto;
-	text-align: center;
+	position: relative;
+	top: -15vh;
+	
 }
+
 .carousel-control-prev-icon{
 	position: relative;
 	top:2vh;
@@ -50,6 +58,7 @@ body{
 	background-color: green;
 	
 }
+
 
 @media screen and (min-width:992px)
 .carousel{

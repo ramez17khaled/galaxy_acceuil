@@ -1,187 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Plants Pathogens</title>
-    <meta name="description" content="The French Galaxy Instance: Plants-Pathogens" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/styleslider.css">
-    <link rel="stylesheet" href="../style/style.css" />
-    
-  
+<head>
+  <title>Plants Pathogens</title>
+  <meta name="description" content="The French Galaxy Instance: Plants-Pathogens" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/styleslider.css">
+  <link rel="stylesheet" href="../style/style.css" />
+
 </head>
 
-  <body>
-    <div class="container-fluid">  
+<body>
+  <div class="container-fluid">
     <div class="container" style="text-align:justify">
-      <img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo-ukraine.png" class="flleft" height="100px"><h1 style="display: inline-block">Welcome to Galaxy Plants-Pathogens </h1>
+      <img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo-ukraine.png" class="flleft" height="100px">
+      <h1 style="display: inline-block">Welcome to Galaxy Plants-Pathogens</h1>
       <div class="alert alert-secondary" role="alert">
         By using this Galaxy instance, we assume that you have read and accepted the <a href="https://ifb-elixirfr.gitlab.io/usegalaxy-fr/welcome//common/terms.html" target="_parent">Terms of Use</a>
       </div>
       <iframe class="embed-responsive-item, messages_iframe" src="../common/messages.html" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
-            <!-- caroussel  -->
-               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <a target="_self" href="https://plants-pathogens.usegalaxy.fr/tool_runner?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fsouthgreen%2Ftraceancestor%2Ftraceancestor%2F0.1.0%2Bgalaxy0" rel="noreferrer"><img class = "pics"  src="./images/slideshow/circos.jpg" class="d-block" alt="circos from TraceAncestor"></a>
-                    <div style="margin-right: 200px;">
-                      <hr>
-                      <h3>Mosaic genome reconstruction </h3>
-                      <h5>TraceAncestor to analyze the mosaic structure of plant genomes (Oueslati et al., 2017 ; Ahmed et al., 2019) <hr></h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a target="_self" href="https://plants-pathogens.usegalaxy.fr/published/workflow?id=5ec6d378e60f7ccc" rel="noreferrer"><img class = "pics" src="./images/slideshow/tree.jpg" class="d-block" alt="gene family tree"></a>
-                    <div style="margin-right: 200px;">
-                      <hr>
-                      <h3>Gene families</h3>
-                      <h5 style="line-height: 180%;">Greenphyl / GenFam: comparative and functional genomics in plants (Rouard et al, 2011) <hr></h5>
-                    </div>
-                  </div>
-                                  
-                </div>
-                  <div class="carousel-indicators">
-                  <div class="container-logos">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active thumbnail" aria-current="true" aria-label="Slide 1">
-                      <img src="./images/slideshow/circos.jpg" class="d-block w-100" alt="circos from TraceAncestor">
-                    </button>
-                   
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="thumbnail" aria-label="Slide 2">
-                      <img  src="./images/slideshow/tree.jpg" class="d-block w-100" alt="gene family tree">
-                    </button>
-                   
-                  </div>    
-                  </div>
 
-            </div>
-            <div style= "margin-top: -10vh;">
-            <h8 style= "margin-top: -100vh; font-size: 30px;" >
-             The Plants-Pathogens Galaxy instance consist of bioinformatics applications and workflows dedicated to genetics and genomics of tropical and Mediterranean plants and their pathogens.
-                  <br></br>Based on a strong community in the field of agriculture, food, biodiversity and environment, this tools are developped by scientists from the South Green platform, a network of national and international scope.
-                  <br></br>South Green is also a part of the network of bioinformatics platforms with French bioinformatics Institute (IFB).
-              </h8>
-            </div>
-          
-        <br /><br />       
-        <hr />
-        
-        <h3>Plants-Pathogens tools and workflows</h3>
-        <br>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col"><h5>Workflows</h5></th>
-              <th scope="col"><h5>Usage</h5></th>
-              <th scope="col"><h5>Link</h5></th>
-            </tr>
-          </thead>
+      <div style="margin-top: -10vh;">
+        <h8 style="margin-top: -100vh; font-size: 18px;">
+          The Plants-Pathogens Galaxy instance consist of bioinformatics applications and workflows dedicated to genetics and genomics of tropical and Mediterranean plants and their pathogens.
+          <br><br>Based on a strong community in the field of agriculture, food, biodiversity and environment, this tools are developed by scientists from the South Green platform, a network of national and international scope.
+          <br><br>South Green is also a part of the network of bioinformatics platforms with French bioinformatics Institute (IFB).
+        </h8>
+      </div>
+
+      <br /><br />
+      <hr />
+      <!-- caroussel -->
+      <h3>Plants-Pathogens tools and workflows</h3>
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><h5>Workflows</h5></th>
+            <th scope="col"><h5>Usage</h5></th>
+            <th scope="col"><h5>Link</h5></th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <th scope="row"><li><h6>TraceAncestor</h6></th>
             <td>A suite of tools to analyze the mosaic structure of plant genomes</li></td>
             <td>
-              <a target="_self" href="https://plants-pathogens.usegalaxy.fr/tool_runner?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fsouthgreen%2Ftraceancestor%2Ftraceancestor%2F0.1.0%2Bgalaxy0" rel="noreferrer"><img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a target="_blank" href="https://plants-pathogens.usegalaxy.fr/workflows/run?id=c44199b6217bdabe" rel="noreferrer">
+                <img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px">
+              </a>
             </td>
           </tr>
           <tr>
-            <th scope="row"><li><h6>Genfam introgrice build prot 13 species</h6></th> 
+            <th scope="row"><li><h6>Genfam introgrice build prot 13 species</h6></th>
             <td>Workflow to build HMM protein profile and scan 13 proteomes (rice Japonica Nipponbare, sorghum, sugarcane, arabidopsis, date palm, oil palm, coconut, banana and 5 wild rices) to define a protein gene family</li></td>
             <td>
-              <a target="_self" href="https://plants-pathogens.usegalaxy.fr/published/workflow?id=5ec6d378e60f7ccc"><img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a target="_blank" href="https://plants-pathogens.usegalaxy.fr/workflows/run?id=5ec6d378e60f7ccc">
+                <img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px">
+              </a>
             </td>
           </tr>
           <tr>
-            <th scope="row"><li><h6>Genfam introgrice build prot 8 species</h6></th> 
+            <th scope="row"><li><h6>Genfam introgrice build prot 8 species</h6></th>
             <td>Workflow to build HMM protein profile and scan 8 proteomes (rice, sorghum, sugarcane, arabidopsis, date palm, oil palm, coconut, banana) to define a protein gene family</li></td>
             <td>
-              <a target="_self" href="https://plants-pathogens.usegalaxy.fr/published/workflow?id=b131218bec7eacb4"><img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a target="_blank" href="https://plants-pathogens.usegalaxy.fr/workflows/run?id=b131218bec7eacb4">
+                <img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px">
+              </a>
             </td>
           </tr>
           <tr>
-            <th scope="row"><li><h6>Genfam introgrice build cds 30 species</h6></th> 
+            <th scope="row"><li><h6>Genfam introgrice build cds 30 species</h6></th>
             <td>Workflow to build HMM protein profile and scan 30 rice coding genome (5 Japonica, 10 Indica, 4 Aus, 3 Basmati, Glaberrima and 7 wild rices) to define a nucleic gene family</li></td>
             <td>
-             <a target="_self" href="https://plants-pathogens.usegalaxy.fr/published/workflow?id=167f23aff2578fbd"><img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
+              <a target="_blank" href="https://plants-pathogens.usegalaxy.fr/workflows/run?id=167f23aff2578fbd">
+                <img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px">
+              </a>
             </td>
           </tr>
           <tr>
-            <th scope="row"><li><h6>Genfam introgrice build cds 6 species</h6></th> 
-             <td>Workflow to build HMM protein profile and scan 6 rice coding genome (Japonica Nipponbare and 5 wild rices) to define a nucleic gene family</li></td>
-             <td>
-              <a target="_self" href="https://plants-pathogens.usegalaxy.fr/published/workflow?id=d425a77157cae2ee"><img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
-             </td>
+            <th scope="row"><li><h6>Genfam introgrice build cds 6 species</h6></th>
+            <td>Workflow to build HMM protein profile and scan 6 rice coding genome (Japonica Nipponbare and 5 wild rices) to define a nucleic gene family</li></td>
+            <td>
+              <a target="_blank" href="https://plants-pathogens.usegalaxy.fr/workflows/run?id=d425a77157cae2ee">
+                <img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px">
+              </a>
+            </td>
           </tr>
-            <tr>
-              <th scope="row"><li><h6>Genfam prot phylogeny</h6></th> 
-              <td>Workflow for phylogenetic analysis of a protein gene family</li></td>
-              <td>
-               <a target="_self" href="https://plants-pathogens.usegalaxy.fr/published/workflow?id=894143d81af8dff0"><img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row"><li><h6>Genfam cds phylogeny</h6></th> 
-              <td>Workflow for phylogenetic analysis of a nucleic gene family</li></td>
-              <td>
-               <a target="_self" href="https://plants-pathogens.usegalaxy.fr/published/workflow?id=63b49f322ec366b5"><img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px"></a>
-              </td>
-            </tr>
-          </tbody>
-         </table>  
-        </div>   
-        </div>
-
-       <!-- Partners -->
-  
-      <div class="row">
-        <div class="col-9">
-           <div class="container" style="text-align:justify">
-            <h4> Our partners :</h4>
-            <div class="row align-items-center">
-              <div class="col-sm">
-                <a href="https://www.cirad.fr" target="_blank"><center><img src="./images/cirad.png" style="width:80%;" /></center></a>
-              </div>
-              <div class="col-sm">
-                <a href="https://www.ird.fr" target="_blank"><center><img src="./images/ird.png" style="width:70%;" /></center></a>
-              </div>
-              <div class="col-sm">
-                <a href="https://www.inrae.fr" target="_blank"><center><img src="./images/inrae.png" style="width:70%;" /></center></a>
-              </div>
-              <div class="col-sm">
-                <a href="https://www.bioversityinternational.org/" target="_blank"><center><img src="./images/Bioversity.png" style="width:100%;" /></center></a>
-              </div>
-              <div class="col-sm">
-                <a href="https://www.supagro.fr/" target="_blank"><center><img src="./images/supagro.png" style="width:70%;" /></center></a>
-              </div>
-              <div class="col-sm">
-                <a href="https://www.arcad-project.org/" target="_blank"><center><img src="./images/arcade.png" style="width:90%;" /></center></a>
-              </div>
-              <div class="col-sm">
-                <a href="https://www.southgreen.fr/" target="_blank"><center><img src="./images/southgreen.png" style="width:100%;" /></center></a>
-              </div>           
-              <div class="col-sm">
-                <a href="https://www.france-bioinformatique.fr/en" target="_blank"><center><img src="../images/logo_funders/ifb.png" style="width:80%;" /></center></a>
-              </div>
-              <div class="w-100"></div>
-            </div>
-          </div>
-        </div>   
-      </div>
-   
-       <!-- footer  -->
-      <hr />
-      <iframe class="embed-responsive-item, services_iframe" src="../common/services.html" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
-      <iframe class="embed-responsive-item, subdomains_iframe" src="../common/subdomains.html" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
-      <iframe class="embed-responsive-item, footer_iframe" src="../common/footer.html" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
+          <tr>
+            <th scope="row"><li><h6>Genfam prot phylogeny</h6></th>
+            <td>Workflow for phylogenetic analysis of a protein gene family</li></td>
+            <td>
+              <a target="_blank" href="https://plants-pathogens.usegalaxy.fr/workflows/run?id=894143d81af8dff0">
+                <img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px">
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><li><h6>Genfam cds phylogeny</h6></th>
+            <td>Workflow for phylogenetic analysis of a nucleic gene family</li></td>
+            <td>
+              <a target="_blank" href="https://plants-pathogens.usegalaxy.fr/workflows/run?id=63b49f322ec366b5">
+                <img src="../images/logo_usegalaxy-fr/usegalaxy-fr-logo.png" height="40px">
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+      <!-- Partners -->
+  <div class="row">
+    <div class="col-9" style= "margin-left: 20vh">
+      <div class="container" style="text-align:justify">
+        <h4 style= "margin-left: 2vh">Our partners:</h4>
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <a href="https://www.cirad.fr" target="_blank">
+              <center><img src="./images/cirad.png" style="width:80%;" /></center>
+            </a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.ird.fr" target="_blank">
+              <center><img src="./images/ird.png" style="width:70%;" /></center>
+            </a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.inrae.fr" target="_blank">
+              <center><img src="./images/inrae.png" style="width:70%;" /></center>
+            </a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.bioversityinternational.org/" target="_blank">
+              <center><img src="./images/Bioversity.png" style="width:100%;" /></center>
+            </a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.supagro.fr/" target="_blank">
+              <center><img src="./images/supagro.png" style="width:70%;" /></center>
+            </a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.arcad-project.org/" target="_blank">
+              <center><img src="./images/arcade.png" style="width:90%;" /></center>
+            </a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.southgreen.fr/" target="_blank">
+              <center><img src="./images/southgreen.png" style="width:100%;" /></center>
+            </a>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.france-bioinformatique.fr/en" target="_blank">
+              <center><img src="../images/logo_funders/ifb.png" style="width:80%;" /></center>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- footer -->
+  <hr />
+  <iframe class="embed-responsive-item, services_iframe" src="../common/services.html"
+    onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
+  <iframe class="embed-responsive-item, subdomains_iframe" src="../common/subdomains.html"
+    onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
+  <iframe class="embed-responsive-item, footer_iframe" src="../common/footer.html"
+    onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';"></iframe>
 
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  </div>
+
+
+
+</body>
+
 </html>

@@ -1,0 +1,48 @@
+# Default spec for an exported lab landing page
+
+# You can test with: /?content_root=https://raw.githubusercontent.com/usegalaxy-au/galaxy-labs-engine/dev/app/labs/content/simple/base.yml
+
+
+
+site_name: France
+nationality: French
+
+# Used for rendering tool/workflow links. Trailing '/' will be removed.
+lab_name: PEPR Galaxy-BioProd Lab
+galaxy_base_url: https://b-best.usegalaxy-dev.dev.ifb.local
+subdomain: b-best
+root_domain: usegalaxy-dev.dev.ifb.local
+support_url: https://community.france-bioinformatique.fr/c/galaxy/8
+quota_request_url: https://community.france-bioinformatique.fr/t/readme-before-request-a-galaxy-quota-extension/933
+data_policy_url: "#data-policy"
+terms_url: https://ifb-elixirfr.gitlab.io/usegalaxy-fr/welcome/common/terms.html
+
+help_links:
+  - title: Galaxy FR help forum
+    url: https://community.france-bioinformatique.fr/c/galaxy/8
+  - title: General Galaxy support
+    url: https://galaxyproject.org/support/
+  - title: Galaxy Training Community chat
+    url: https://matrix.to/#/#Galaxy-Training-Network_Lobby:gitter.im
+  - title: Usegalaxy.eu chat
+    url: https://matrix.to/#/#usegalaxy-eu_Lobby:gitter.im
+  - title: Usegalaxy.org chat
+    url: https://matrix.to/#/#galaxyproject_Lobby:gitter.im
+
+
+
+# These files need to be accessible on the internet, relative to the content_root URL!
+# -----------------------------------------------------------------------------
+# Custom content relative to this file URL
+header_logo: static/logo.svg
+custom_css: static/custom.css
+intro_md: templates/intro.html
+footer_md: templates/footer.html
+conclusion_md: templates/conclusion.html
+video_url: https://www.youtube.com/watch?v=VNE0pF6Nqgw
+video_tooltip: Introduction to data analysis on Galaxy Australia
+
+# Data to be rendered into sections/tabs/accordion elements:
+sections:
+  - section_1.yml
+  - section_2.yml

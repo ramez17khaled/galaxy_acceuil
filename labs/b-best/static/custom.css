@@ -12,3 +12,32 @@
     border-radius: 8px; /* optional: rounded corners */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* optional: subtle shadow */
   }
+
+.Header-logo {
+  display: flex;
+  justify-content: center; /* centers logos horizontally */
+  align-items: center;
+  gap: 20px; /* space between logos */
+  padding: 10px 0;
+  background-color: #fff; /* optional: set header background */
+  border-bottom: 1px solid #ccc; /* optional: visual separation */
+}
+
+.Header-logo-partner img {
+  height: 60px; /* uniform logo height */
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .Header-logo {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .Header-logo-partner img {
+    height: 40px;
+  }
+}
